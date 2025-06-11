@@ -1,0 +1,6 @@
+[DEFAULT]
+bootstrap.servers = <your bootstrap_server> 
+sasl.username = <your api-key>
+sasl.password = <your api-secret>
+sasl.mechanisms = PLAIN
+security.protocol = SASL_SSL
