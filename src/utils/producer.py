@@ -24,14 +24,12 @@ def acknowledge(err: Exception, msg: Message):
 
 
 def produce_msg(
+    producer: Producer,
     topic: str,
     value: str | bytes,
     key=None,
-    producer: Producer = None,
     callback=acknowledge,
     headers=None,
 ):
-    if producer is None:
-        producer = create_producer()
     producer.produce(topic, value, key, callback=callback)
-    producer.flush(1)
+    # producer.flush(1)

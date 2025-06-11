@@ -3,7 +3,7 @@ from confluent_kafka import Consumer
 
 
 def create_consumer(
-    topics: list[str] | str,
+    topics: list[str],
     consumer_grp: str,
     auto_offset_reset: AutoOffsetReset = AutoOffsetReset.EARLIEST,
 ):
