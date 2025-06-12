@@ -17,9 +17,9 @@ def test_kafka_config_isnotempty():
 
 def test_producer_config():
     result = {
-        "bootstrap.server": "pkc-56d1g.eastus.azure.confluent.cloud:9092",
-        "sasl.username": "APPNVPL5P4AAKSE5",
-        "sasl.password": "9/czF+NFWRb6gTXgDXUU9aPTMSHXexGesxwGN7fi9F/c5gWxD4ympLqxsdJtufFp",
+        "bootstrap.server": "<your bootstrap server>",
+        "sasl.username": "<your api-key>",
+        "sasl.password": "<your api-secret>",
         "sasl.mechanisms": "PLAIN",
         "security.protocol": "SASL_SSL",
         "acks": "all",
@@ -38,9 +38,9 @@ def test_producer_config():
 )
 def test_consumer_config(consumer_grp, offset_reset):
     result = {
-        "bootstrap.server": "pkc-56d1g.eastus.azure.confluent.cloud:9092",
-        "sasl.username": "APPNVPL5P4AAKSE5",
-        "sasl.password": "9/czF+NFWRb6gTXgDXUU9aPTMSHXexGesxwGN7fi9F/c5gWxD4ympLqxsdJtufFp",
+        "bootstrap.server": "<your bootstrap server>",
+        "sasl.username": "<your api-key>",
+        "sasl.password": "<your api-secret>",
         "sasl.mechanisms": "PLAIN",
         "security.protocol": "SASL_SSL",
         "group.id": consumer_grp,
